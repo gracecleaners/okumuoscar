@@ -42,6 +42,17 @@ body {
 }
 body h1, body h2, body h3, body h4, body h5, body h6 { scroll-margin-top: 66px; }
 body.fixed-top-nav { padding-top: 56px; }
+.navbar-toggler { border: none; outline: none !important; box-shadow: none !important; padding: 0.4rem 0.5rem; }
+.navbar-toggler:focus { box-shadow: none !important; outline: none !important; }
+.icon-bar { display: block; width: 22px; height: 2px; background-color: var(--global-text-color); border-radius: 2px; transition: transform 300ms ease, opacity 200ms ease; }
+.icon-bar + .icon-bar { margin-top: 5px; }
+.navbar-toggler.collapsed .top-bar { transform: rotate(0); }
+.navbar-toggler.collapsed .middle-bar { opacity: 1; }
+.navbar-toggler.collapsed .bottom-bar { transform: rotate(0); }
+.navbar-toggler:not(.collapsed) .top-bar { transform: rotate(45deg) translate(5px, 5px); }
+.navbar-toggler:not(.collapsed) .middle-bar { opacity: 0; }
+.navbar-toggler:not(.collapsed) .bottom-bar { transform: rotate(-45deg) translate(5px, -5px); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 body.sticky-bottom-footer { padding-bottom: 0; }
 .container { max-width: 1240px; }
 .profile img { width: 100%; }
@@ -91,6 +102,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.7));
     backdrop-filter: blur(2px);
     margin-bottom: 1.6rem;
+    margin-right: 300px;
 }
 html[data-theme=dark] .intro-bloc { background: linear-gradient(120deg, rgba(33, 37, 41, 0.92), rgba(33, 37, 41, 0.72)); }
 .section-title { margin-top: 2rem; margin-bottom: 1rem; font-weight: 700; letter-spacing: 0.02em; }
@@ -196,6 +208,7 @@ html[data-theme=dark] .intro-bloc { background: linear-gradient(120deg, rgba(33,
     .container { padding-left: 0.75rem; padding-right: 0.75rem; max-width: 100%; }
     .navbar .container { padding-left: 0.5rem; padding-right: 0.5rem; }
     .navbar-collapse { margin-top: 0.4rem; padding: 0.5rem 0.6rem; border: 1px solid var(--global-divider-color); border-radius: 10px; background-color: var(--global-bg-color); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+    .navbar-toggler { display: block !important; }
     .navbar.navbar-light .navbar-nav .nav-item .nav-link { padding: 0.6rem 0.5rem; font-size: 0.95rem; }
     .toggle-container { margin-top: 0.2rem; }
     .post::before { inset: -10px -10px auto -10px; height: 140px; }
@@ -223,6 +236,6 @@ html[data-theme=dark] .intro-bloc { background: linear-gradient(120deg, rgba(33,
     .chip { padding: 0.25rem 0.55rem; font-size: 0.78rem; }
     .skill-icons { gap: 0.5rem; justify-content: center; }
     .skill-icons img { max-width: 48px; }
-    .footer .container { text-align: center; font-size: 0.82rem; }
+    footer .container { text-align: center; font-size: 0.82rem; }
     figure, img { max-width: 100%; }
 }
