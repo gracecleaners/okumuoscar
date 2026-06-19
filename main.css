@@ -49,10 +49,9 @@ body.fixed-top-nav { padding-top: 56px; }
 .navbar-toggler.collapsed .top-bar { transform: rotate(0); }
 .navbar-toggler.collapsed .middle-bar { opacity: 1; }
 .navbar-toggler.collapsed .bottom-bar { transform: rotate(0); }
-.navbar-toggler:not(.collapsed) .top-bar { transform: rotate(45deg) translate(5px, 5px); }
+.navbar-toggler:not(.collapsed) .top-bar { transform: rotate(45deg) translate(5px, 6px); }
 .navbar-toggler:not(.collapsed) .middle-bar { opacity: 0; }
-.navbar-toggler:not(.collapsed) .bottom-bar { transform: rotate(-45deg) translate(5px, -5px); }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+.navbar-toggler:not(.collapsed) .bottom-bar { transform: rotate(-45deg) translate(5px, -6px); }
 body.sticky-bottom-footer { padding-bottom: 0; }
 .container { max-width: 1240px; }
 .profile img { width: 100%; }
