@@ -34,6 +34,11 @@ html[data-theme=dark] .fa-sun { padding-left: 10px; padding-top: 12px; display: 
 html[data-theme=dark] .fa-moon { display: none; }
 html[data-theme=dark] .repo-img-light { display: none; }
 html[data-theme=dark] .repo-img-dark { display: block; }
+html[data-theme=dark] .navbar { background-color: var(--global-bg-color) !important; }
+html[data-theme=dark] .navbar-light .nav-link { color: var(--global-text-color); }
+html[data-theme=dark] .navbar-light .nav-link:hover { color: var(--global-theme-color); }
+html[data-theme=dark] .navbar-light .navbar-nav .active > .nav-link { color: var(--global-theme-color); }
+html[data-theme=dark] .navbar-collapse { background-color: var(--global-bg-color); border-color: var(--global-divider-color); }
 body {
     padding-bottom: 70px;
     color: var(--global-text-color);
